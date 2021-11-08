@@ -10,8 +10,11 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "easy-peasy": "^5.0.4",
+    "modulea-bn": "0.0.14",
     "react": "17.0.2",
-    "react-native": "0.66.2"
+    "react-native": "0.66.2",
+    "remote-redux-devtools": "^0.5.16"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
