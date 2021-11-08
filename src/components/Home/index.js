@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useStoreActions, useStoreState } from 'easy-peasy';
 import ModuleA from 'modulea-bn';
 
@@ -10,9 +10,11 @@ function Home() {
 
   const handleStateUpdate = (data) => {
     updateModuleState(data);
-
-    console.log('moduleInfo: ', moduleInfo);
   };
+
+  useEffect(() => {
+    console.log('moduleInfo: ', moduleInfo);
+  }, [moduleInfo]);
 
   return (
     <ModuleA
