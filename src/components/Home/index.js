@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { View } from 'react-native';
+import React from 'react';
 import { useStoreActions, useStoreState } from 'easy-peasy';
 import ModuleA from 'modulea-bn';
 import ModuleB from 'moduleb-bn';
@@ -18,12 +17,8 @@ function Home() {
     updateModuleState(data);
   };
 
-  useEffect(() => {
-    console.log('moduleInfo: ', moduleInfo);
-  }, [moduleInfo]);
-
   return (
-    <View>
+    <>
       <ModuleA
         message="This is ModuleA Component"
         handleStateUpdate={handleStateUpdate}
@@ -34,7 +29,7 @@ function Home() {
         backgroundColor={moduleInfo.modulebBackgroundColor}
         changeModuleAState={changeModuleAState}
       />
-    </View>
+    </>
   );
 }
 
