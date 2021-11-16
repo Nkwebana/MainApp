@@ -10,11 +10,20 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-navigation/bottom-tabs": "^6.0.9",
+    "@react-navigation/native": "^6.0.6",
+    "@react-navigation/native-stack": "^6.2.5",
     "easy-peasy": "^5.0.4",
     "modulea-bn": "0.0.15",
     "moduleb-bn": "0.0.5",
+    "productmodule-bn": "0.0.4",
     "react": "17.0.2",
     "react-native": "0.66.2",
+    "react-native-gesture-handler": "^1.10.3",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-safe-area-view": "^1.1.1",
+    "react-native-screens": "^3.9.0",
+    "react-navigation": "^4.4.4",
     "remote-redux-devtools": "^0.5.16"
   },
   "devDependencies": {
