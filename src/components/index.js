@@ -1,4 +1,4 @@
 import NavigationManager from './NavigationManager';
-import Cart from './Cart'
+import CartItems from './CartItems'
 
-export { NavigationManager, Cart }
+export { NavigationManager, CartItems }

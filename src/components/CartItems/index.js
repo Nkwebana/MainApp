@@ -8,11 +8,14 @@ import {
   StyledCounter
 } from './styledComponents';
 
-function Cart() {
+function CartItems() {
   const cartItems = useStoreState((state) => state.cart.cartProducts);
 
+  const handleCartAction = () => { }
+
+
   return (
-    <StyledCart >
+    <StyledCart onPress={() => handleCartAction()}>
       <StyledCartIcon>
         <StyledImage source={require('../../assests/cart.png')} />
         <StyledCounter>{cartItems.length}</StyledCounter>
@@ -21,4 +24,4 @@ function Cart() {
   );
 }
 
-export default Cart;
+export default CartItems;
