@@ -13,7 +13,6 @@ function CartItems() {
 
   const handleCartAction = () => { }
 
-
   return (
     <StyledCart onPress={() => handleCartAction()}>
       <StyledCartIcon>
