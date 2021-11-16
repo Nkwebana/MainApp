@@ -30,7 +30,7 @@ function NavigationManager({ products }) {
 
   const handleLogin = (loginData) => {
     navigate('Products')
-    console.log('loginData: ', loginData);
+    console.log('loginData: ', loginData); //Should be uploaded to AsyncStorage
   }
 
   return (
