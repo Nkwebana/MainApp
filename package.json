@@ -14,7 +14,7 @@
     "@react-navigation/native-stack": "^6.2.5",
     "easy-peasy": "^5.0.4",
     "modulea-bn": "0.0.17",
-    "productmodule-bn": "0.0.4",
+    "productmodule-bn": "0.0.5",
     "react": "17.0.2",
     "react-native": "0.66.2",
     "react-native-gesture-handler": "^1.10.3",
