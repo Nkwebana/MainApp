@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
 // NOTE: change View to your preferred type: e.g Button
-const StyledTest = styled.View``;
+const StyledTest3 = styled.View``;
 
-export { StyledTest };
+export { StyledTest3 };
