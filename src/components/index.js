@@ -1,4 +1,4 @@
-import NavigationManager from './NavigationManager';
-import CartItems from './CartItems'
+import CartItems from "./CartItems";
+import NavigationManager from "./NavigationManager";
 
-export { NavigationManager, CartItems }
+export { CartItems, NavigationManager };

@@ -9,7 +9,7 @@ import PropTypes from "prop-types";
 import { useStoreActions } from "easy-peasy";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import ProductModule from "productmodule-bn";
+import ProductModule, { ProductDetail } from "productmodule-bn";
 import Login from "modulea-bn";
 
 function NavigationManager({
@@ -70,6 +70,7 @@ function NavigationManager({
             />
           )}
         </Stack.Screen>
+        <Stack.Screen name="Product Details" component={ProductDetail} />
       </Stack.Navigator>
     </NavigationContainer>
   );

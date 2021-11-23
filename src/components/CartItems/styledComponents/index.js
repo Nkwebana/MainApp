@@ -1,9 +1,8 @@
-import styled from 'styled-components';
-
+import styled from "styled-components";
 
 const StyledCart = styled.View`
-  position: absolute; 
-  bottom: 50px; 
+  position: absolute;
+  bottom: 50px;
   right: 5px;
 `;
 
@@ -17,14 +16,8 @@ const StyledImage = styled.Image`
 `;
 
 const StyledCounter = styled.Text`
-  color: red;  
+  color: red;
   width: 30px;
 `;
 
-export {
-  StyledCart,
-  StyledCartIcon,
-  StyledImage,
-  StyledCounter
-}
-
+export { StyledCart, StyledCartIcon, StyledImage, StyledCounter };
