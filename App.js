@@ -7,7 +7,8 @@ import { StoreProvider } from "easy-peasy";
 import { SafeAreaView } from "react-native";
 
 import { store } from "./src/store";
-import { CartItems, NavigationManager } from "./src/components";
+import { CartItems } from "./src/components";
+import { NavigationManager } from "./src/navigation";
 
 function App() {
   return (
