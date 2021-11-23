@@ -7,7 +7,7 @@ import { cart } from './Cart';
 export const store = createStore(
   {
     moduleStore,
-    cart
+    cart,
   },
   {
     compose: composeWithDevTools({ realtime: true, trace: true }),

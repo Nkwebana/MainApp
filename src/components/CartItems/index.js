@@ -5,13 +5,13 @@ import {
   StyledCart,
   StyledCartIcon,
   StyledImage,
-  StyledCounter
+  StyledCounter,
 } from './styledComponents';
 
 function CartItems() {
   const cartItems = useStoreState((state) => state.cart.cartProducts);
 
-  const handleCartAction = () => { }
+  const handleCartAction = () => {};
 
   return (
     <StyledCart onPress={() => handleCartAction()}>
