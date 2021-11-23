@@ -11,17 +11,6 @@ import { CartItems } from './src/components';
 import { NavigationManager } from './src/navigation';
 
 function App() {
-  const kingValidation = () => {};
-  const validation = () => {};
-  kingValidation();
-  validation();
-  if (validation) {
-    const validation1 = 1;
-    if (validation1) {
-      return 1;
-    }
-  }
-
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <StoreProvider store={store}>
