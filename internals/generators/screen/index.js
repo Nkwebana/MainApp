@@ -12,7 +12,7 @@ module.exports = {
       name: 'name',
       message: 'What should it be called?',
       default: 'Home',
-      validate: value => {
+      validate: (value) => {
         if (/.+/.test(value)) {
           return componentExists(value)
             ? 'A component or screen with this name already exists'
@@ -21,9 +21,9 @@ module.exports = {
 
         return 'The name is required';
       },
-    }
+    },
   ],
-  actions: data => {
+  actions: (data) => {
     // Generate index.js and index.test.js
     const componentTemplate = './screen/screen.js.hbs'; // eslint-disable-line no-var
 
@@ -32,10 +32,10 @@ module.exports = {
         type: 'add',
         path: '../../src/screens/{{properCase name}}/index.js',
         templateFile: componentTemplate,
+        skipIfExists: true,
         abortOnFail: true,
       },
     ];
-
 
     actions.push({
       type: 'prettify',
