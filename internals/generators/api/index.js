@@ -21,7 +21,7 @@ module.exports = {
   ],
   actions: (data) => {
     // Generate index.js and index.test.js
-    const componentTemplate = './api/api.js.hbs'; // eslint-disable-line no-var
+    const componentTemplate = './api/api.hbs'; // eslint-disable-line no-var
 
     const actions = [
       {
