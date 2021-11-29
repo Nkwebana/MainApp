@@ -1,12 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const StyledCart = styled.View`
-  position: absolute;
-  bottom: 50px;
-  right: 5px;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: flex-end;
+  width: 80px;
 `;
 
-const StyledCartIcon = styled.TouchableOpacity`
+const StyledCartIcon = styled.View`
   flex-direction: row;
 `;
 
@@ -17,7 +18,7 @@ const StyledImage = styled.Image`
 
 const StyledCounter = styled.Text`
   color: red;
-  width: 30px;
+  width: 25px;
 `;
 
 export { StyledCart, StyledCartIcon, StyledImage, StyledCounter };
