@@ -116,8 +116,7 @@ function NavigationManager({
           <Tab.Screen
             name="Settings"
             component={SettingsScreen}
-            options={{ headerShown: false }}
-            options={({ route }) => ({
+            options={() => ({
               headerShown: false,
               tabBarLabel: 'Cart',
               tabBarLabelStyle: {
