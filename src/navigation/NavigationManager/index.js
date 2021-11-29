@@ -13,6 +13,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import ProductModule, { ProductDetail } from 'productmodule-bn';
 import Login from 'modulea-bn';
 import { View, Text, Image } from 'react-native';
+
 import { CartItems } from '../../components';
 
 function SettingsScreen() {
