@@ -58,17 +58,21 @@ function NavigationManager({
     <NavigationContainer ref={containerRef}>
       <Stack.Navigator initialRouteName="Login Screen">
         <Stack.Screen name="Login Screen">
-          {(props) => <Login {...props} handleLogin={handleLogin} />}
+          {(props) => {
+            return <Login {...props} handleLogin={handleLogin} />;
+          }}
         </Stack.Screen>
 
         <Stack.Screen name="Products">
-          {(props) => (
-            <ProductModule
-              {...props}
-              products={products}
-              addToCart={addToCart}
-            />
-          )}
+          {(props) => {
+            return (
+              <ProductModule
+                {...props}
+                products={products}
+                addToCart={addToCart}
+              />
+            );
+          }}
         </Stack.Screen>
 
         <Stack.Screen name="Product Details" component={ProductDetail} />
