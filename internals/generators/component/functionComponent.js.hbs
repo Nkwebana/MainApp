@@ -1,0 +1,27 @@
+/**
+  *
+  * {{ properCase name }}
+  *
+  */
+
+import React from 'react';
+import { View } from 'react-native';
+import PropTypes from 'prop-types';
+
+{{#if wantStyledComp}}
+import { Styled{{ properCase name }} } from './styledComponents';
+{{/if}}
+
+function {{ properCase name }}(props) {
+{{#if wantStyledComp}}
+  return <Styled{{ properCase name }}></Styled{{ properCase name }}>;
+{{else}}
+  return <View></View>;
+  {{/if}}
+}
+
+{{ properCase name }}.propTypes = {};
+
+{{ properCase name }}.defaultProps = {};
+
+export default {{ properCase name }};
