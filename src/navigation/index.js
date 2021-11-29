@@ -1,3 +1,3 @@
-import NavigationManager from "./NavigationManager";
+import NavigationManager from './NavigationManager';
 
 export { NavigationManager };

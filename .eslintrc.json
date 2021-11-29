@@ -1,0 +1,58 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "commonjs": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "no-duplicate-imports": "error",
+    "no-await-in-loop": "error",
+    "array-callback-return": "error",
+    "camelcase": "error",
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "*", "next": "return" }
+    ],
+    "space-infix-ops": "error",
+    "block-scoped-var": "error",
+    "consistent-return": "error",
+    "no-else-return": ["error", { "allowElseIf": false }],
+    "no-lone-blocks": "error",
+    "no-loop-func": "error",
+    "no-unsafe-optional-chaining": "off",
+    "arrow-spacing": "error",
+    "curly": "error",
+    "guard-for-in": "error",
+    "max-nested-callbacks": ["error", 3],
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-return-assign": "error",
+    "eol-last": ["error", "always"],
+    "prefer-template": "error",
+    "require-await": "error",
+    "no-useless-return": "error",
+    "no-useless-catch": "error",
+    "no-empty-function": "error",
+    "no-self-compare": "error",
+    "capitalized-comments": ["error"],
+    "default-case": "error",
+    "func-name-matching": "error",
+    "no-magic-numbers": "error",
+    "no-multi-str": "error",
+    "no-useless-constructor": "error",
+    "prefer-promise-reject-errors": "error",
+    "block-spacing": "error"
+  }
+}

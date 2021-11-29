@@ -94,7 +94,7 @@ function NavigationManager({
           <Tab.Screen
             name="Products"
             component={Login}
-            options={({ route, navigation }) => ({
+            options={() => ({
               headerShown: false,
               tabBarLabel: 'Home',
               tabBarLabelStyle: {
@@ -136,7 +136,7 @@ function NavigationManager({
   );
 }
 
-ProductModule.propTypes = {
+NavigationManager.propTypes = {
   products: PropTypes.array,
   addToCart: PropTypes.func,
 };

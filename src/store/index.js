@@ -1,7 +1,7 @@
-import { createStore } from "easy-peasy";
-import { composeWithDevTools } from "remote-redux-devtools";
+import { createStore } from 'easy-peasy';
+import { composeWithDevTools } from 'remote-redux-devtools';
 
-import { cart } from "./Cart";
+import { cart } from './Cart';
 
 export const store = createStore(
   {
