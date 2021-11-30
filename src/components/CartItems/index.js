@@ -11,7 +11,9 @@ import {
 function CartItems() {
   const cartItems = useStoreState((state) => state.cart.cartProducts);
 
-  const handleCartAction = () => {};
+  const handleCartAction = () => {
+    //Handle cart action here
+  };
 
   return (
     <StyledCart onPress={() => handleCartAction()}>

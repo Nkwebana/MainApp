@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 const StyledCart = styled.View`
-  flex-direction: row;
-  justify-content: flex-end;
-  align-content: flex-end;
+  position: absolute;
+  bottom: 60px;
+  right: 0;
   width: 80px;
 `;
 

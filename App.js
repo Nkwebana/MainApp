@@ -15,7 +15,7 @@ function App() {
     <SafeAreaView style={{ flex: 1 }}>
       <StoreProvider store={store}>
         <NavigationManager />
-        {/* <CartItems /> */}
+        <CartItems />
       </StoreProvider>
     </SafeAreaView>
   );
