@@ -6,23 +6,16 @@
 
 import React, { createRef } from 'react';
 import PropTypes from 'prop-types';
-import { View, Text, Image } from 'react-native';
+import { Image } from 'react-native';
 import { useStoreActions } from 'easy-peasy';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import ProductModule, { ProductDetail } from 'productmodule-bn';
 import Login from 'modulea-bn';
 
 import { CartItems } from '../../components';
-
-function SettingsScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Settings!</Text>
-    </View>
-  );
-}
+import { Cart } from '../../screens';
 
 function NavigationManager({
   products = [
@@ -48,6 +41,7 @@ function NavigationManager({
 }) {
   const Stack = createNativeStackNavigator();
   const Tab = createBottomTabNavigator();
+  const navigation = useNavigation();
 
   const containerRef = createRef();
 
@@ -68,6 +62,12 @@ function NavigationManager({
     }
   };
 
+  const cartNav = () => (
+    <Stack.Navigator>
+      <Stack.Screen name="Cart" component={Cart} />
+    </Stack.Navigator>
+  );
+
   return (
     <>
       <NavigationContainer ref={containerRef}>
@@ -86,6 +86,7 @@ function NavigationManager({
             )}
           </Stack.Screen>
           <Stack.Screen name="Product Details" component={ProductDetail} />
+          <Stack.Screen name="Cart" component={Cart} />
         </Stack.Navigator>
       </NavigationContainer>
 
@@ -114,8 +115,16 @@ function NavigationManager({
           />
 
           <Tab.Screen
-            name="Settings"
-            component={SettingsScreen}
+            name="Cart"
+            component={Login}
+            listeners={() => ({
+              tabPress: (e) => {
+                e.preventDefault();
+                console.log('helllow', navigation.navigate('Cart'));
+
+                navigation.navigate('Cart');
+              },
+            })}
             options={() => ({
               headerShown: false,
               tabBarLabel: 'Cart',

@@ -49,7 +49,6 @@
     "capitalized-comments": ["error"],
     "default-case": "error",
     "func-name-matching": "error",
-    "no-magic-numbers": "error",
     "no-multi-str": "error",
     "no-useless-constructor": "error",
     "prefer-promise-reject-errors": "error",
